@@ -63,6 +63,8 @@ pipeline {
                     kubectl apply -f mcdep.yml
                     kubectl apply -f rmq-CIP-service.yml
                     kubectl apply -f rmq-dep.yml
+                    kubectl apply -f pv.yml
+                    kubectl apply -f tomcat-pvc.yml
                     kubectl apply -f vproapp-service.yml
                     kubectl apply -f vproappdep.yml
                     kubectl apply -f vprodbdep.yml
