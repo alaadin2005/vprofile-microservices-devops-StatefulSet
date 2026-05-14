@@ -7,8 +7,8 @@ pipeline {
 
     environment {
         DOCKERHUB_USER = 'alaadin2005'
-        APP_IMAGE = 'vprofileapp'
-        DB_IMAGE = 'vprofiledb'
+        APP_IMAGE = 'vprofile-app'
+        DB_IMAGE = 'vprofile-db'
         TAG = 'latest'
     }
 
@@ -16,7 +16,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/abdelrahmanonline4/dockerized-microservices.git'
+                git branch: 'main', url: 'https://github.com/alaadin2005/vprofile-microservices-devops-StatefulSet.git'
             }
         }
 
